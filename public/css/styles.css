@@ -15,6 +15,10 @@ body {
   padding: 1rem;
 }
 
+.banner {
+  width: 90vw;
+}
+
 .opciones-compra {
   font-weight: 400;
   text-align: center;
@@ -191,6 +195,9 @@ main section article i {
   }
   .footer-centrar {
     width: 100%;
+  }
+  .banner {
+    display: none;
   }
 }
 

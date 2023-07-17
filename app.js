@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-/* const dotenv = require("dotenv").config(); */
+const dotenv = require("dotenv").config();
 
 app.use(express.static(path.join(__dirname, "/public")));
 
-app.listen(3030, () => {
-  console.log("el servidor 3030 anda bien");
+app.listen(process.env.PORT, () => {
+  console.log("el servidor anda bien");
 });
 
 app.get("/", (req, res) => {

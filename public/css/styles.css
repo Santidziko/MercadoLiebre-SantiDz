@@ -1,0 +1,285 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 12px;
+  background-color: #ebebeb;
+}
+
+.main-header {
+  background-color: #eac926;
+  padding: 1rem;
+}
+
+.opciones-compra {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5px;
+}
+.logo {
+  width: 200px;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  border: black 1px solid;
+  padding: 1%;
+  background-color: #ccafaf;
+}
+
+.burger-menu {
+  display: block;
+  padding: 15px 0;
+  border-radius: 20%;
+  background-color: #1259c3;
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  max-width: 45px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.main-navbar {
+  display: none;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.titulares {
+  font-size: 24px;
+  margin-top: 4vh;
+}
+
+.precios {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.descuentos-descripciones {
+  font-size: 16px;
+}
+
+li i {
+  margin-left: 5px;
+}
+
+#logos-footer {
+  font-size: 50px;
+}
+
+.footer-centrar {
+  width: 20vw;
+  height: 25vh;
+  box-sizing: border-box;
+  padding: 1vw;
+  text-align: center;
+}
+
+.casi-footer {
+  margin-top: 8vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 3vh;
+}
+
+footer {
+  background-color: #ffffff;
+}
+
+.separacion {
+  width: 200px;
+  height: 250px;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #ebebeb;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  background-color: white;
+  position: relative;
+  text-align: start;
+}
+
+.separacion img {
+  margin: auto;
+}
+
+.separacion:hover .carrito {
+  transform: rotate(-90deg);
+}
+
+.separacion:hover {
+  box-shadow: 0px 0px 10px #eac926;
+}
+
+.separacion .descripcion-articulo .carrito {
+  transition: transform 0.4s ease;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.descripcion-articulo {
+  position: relative;
+  border-top: 1px solid pink;
+  padding: 15px;
+}
+
+.separacion .descripcion-articulo .descuentos-descripciones {
+  display: none;
+}
+
+.separacion:hover .descripcion-articulo .descuentos-descripciones {
+  display: block;
+}
+
+.formulario-registro {
+  margin-top: 2rem;
+}
+
+.formulario-registro label,
+.boton {
+  display: block;
+}
+
+.formulario-login {
+  height: 35vh;
+  margin-top: 4rem;
+}
+
+@media (max-width: 655px) {
+  .todo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-centrar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .barra-busqueda {
+    display: none;
+  }
+}
+
+@media (min-width: 666px) {
+  .main-header-top-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .opciones-compra {
+    max-width: 350px;
+    text-align: right;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+  }
+  .main-navbar ul {
+    display: flex;
+  }
+  .main-navbar li {
+    margin: 0 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-header-top-bar,
+  .main-navbar {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .main-header-top-bar {
+    align-items: center;
+  }
+
+  .main-navbar li {
+    margin: 0 10px;
+  }
+  .main-navbar a {
+    font-size: 19px;
+  }
+  .opciones-compra {
+    max-width: none;
+    margin: 0;
+  }
+  .logo {
+    width: 250px;
+  }
+  .main-navbar {
+    margin-top: 25px;
+  }
+}
+
+.boton-enviar {
+  background-color: #1259c3;
+  padding: 5px;
+  color: white;
+  border-radius: 12%;
+}
+
+.boton-borrar {
+  background-color: #c31212;
+  padding: 5px;
+  color: white;
+  border-radius: 12%;
+}
+.boton-enviar-login {
+  background-color: #1259c3;
+  padding: 5px;
+  color: white;
+  width: 350px;
+  height: 38px;
+  font-size: 20px;
+}
+
+.boton-enviar-login:hover {
+  background-color: #0022aa;
+}
+
+.agrandar-formulario {
+  font-size: 20px;
+}
